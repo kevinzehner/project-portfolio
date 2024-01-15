@@ -1,7 +1,3 @@
-/* - Font sizes (px) 18 / 24 / 32 / 48 / 56 / 88 */
-
-/* font-family: 'Space Grotesk', sans-serif; */
-
 * {
   padding: 0;
   margin: 0;
@@ -20,8 +16,11 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 100%;
+}
 
+.inner-content {
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -29,13 +28,18 @@ body {
 
 .nav {
   color: #151515;
-  background-color: #f8f8f8;
+  background-color: #ffffff;
   padding: 1rem;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 6rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  /* border-bottom: solid 0.2px; */
 }
 
 .nav_name {
@@ -84,11 +88,6 @@ body {
   transition: 0.5s;
 }
 
-.socials__link:hover,
-.socials__link:active {
-  color: #3498db;
-}
-
 /* HERO */
 
 .hero-section {
@@ -129,12 +128,14 @@ body {
   color: #3498db;
   padding: 1rem 2rem 1rem 2rem;
   font-size: 1.4rem;
+  cursor: pointer;
 }
 
 .cta:hover,
 .cta:active {
-  border: none;
+  border: 2px solid #3498db;
   background-color: #3498db;
+  padding: 1rem 2rem 1rem 2rem;
   color: #fff;
 }
 
@@ -160,16 +161,17 @@ h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
   color: #242424;
-  border: 2px solid #242424;
+  border: 2px solid #3498db;
   display: inline-block;
   padding: 0.5rem 1rem;
   margin-right: 1rem;
   margin-top: 1rem;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 .skill:hover {
-  background-color: #242424;
+  border: none;
+  background-color: #3498db;
   color: #fff;
 }
 

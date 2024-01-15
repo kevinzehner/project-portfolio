@@ -3,83 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles.css" />
-    <title>Kevin Zehner portfolio</title>
+    <title>Your Portfolio</title>
   </head>
   <body>
-  
-      <header>
-        <nav class="nav">
-          <div class="socials">
-            <a href="">
-              <img
-                class="socials__link"
-                src="/images/icon-twitter.svg"
-                alt="twitter"
-                width="24"
-                height="24"
-              />
-            </a>
-            <a href="">
-              <img
-                src="/images/icon-github.svg"
-                alt="twitter"
-                width="24"
-                height="24"
-              />
-            </a>
-            <a href="">
-              <img
-                src="/images/icon-linkedin.svg"
-                alt="twitter"
-                width="24"
-                height="24"
-              />
-            </a>
-          </div>
-          <div class="sections">
-            <a class="nav__link" href="#about">About</a>
-            <a class="nav__link" href="#projects">Projects</a>
-            <a class="nav__link" href="#contact">Contact</a>
-          </div>
-          <p class="nav_name">
-            Kevin Zehner
-          </p>
-        </nav>
-      </header>
-      <div class="container">
-      <section class="section__hero">
-        <div class="hero-section">
-          <div class="hero__left">
-            <h1 class="hero__title">
-              <span class="hero__name">About</span>
-            </h1>
-            <p class="hero__text">
-              Hi, I'm Kevin—a Full Stack Developer based in Nottingham. 
-            </p>
-            <p class="hero__text">
-              I enjoy building both Web and Mobile applications, particularly where fetching external data is involved. When I'm not coding, I enjoy training Martial Arts and travelling.
-            </p>
-            <p class="hero__text final">
-              As a recent Northcoders Graduate, I am looking for a role as a Junior Developer. I would love to hear about any opportunities, feel free to reach out!
-            </p>
-            <a class="cta">CONTACT ME</a>
-          </div>
-          <img class="hero__img" src="/images/1556361965868 (1).jpeg" />
+    <div class="container">
+      <nav class="nav">
+        <div class="socials">
+          <a href="">
+            <img
+              class="socials__link"
+              src="/images/icon-twitter.svg"
+              alt="twitter"
+              width="24"
+              height="24"
+            />
+          </a>
+          <a href="">
+            <img
+              src="/images/icon-github.svg"
+              alt="twitter"
+              width="24"
+              height="24"
+            />
+          </a>
+          <a href="">
+            <img
+              src="/images/icon-linkedin.svg"
+              alt="twitter"
+              width="24"
+              height="24"
+            />
+          </a>
         </div>
+        <div class="sections">
+          <a class="nav__link" href="#about">About</a>
+          <a class="nav__link" href="#projects">Projects</a>
+          <a class="nav__link" href="#contact">Contact</a>
+        </div>
+        <p class="nav_name">Kevin Zehner</p>
+      </nav>
+      <div class="inner-content">
+        <section class="section__hero">
+          <div class="hero-section">
+            <div class="hero__left">
+              <h1 class="hero__title">
+                <span class="hero__name">About</span>
+              </h1>
+              <p class="hero__text">
+                Hi, I'm Kevin—a Full Stack Developer based in Nottingham.
+              </p>
+              <p class="hero__text">
+                I enjoy building both Web and Mobile applications, particularly
+                where fetching external data is involved. When I'm not coding, I
+                enjoy training Martial Arts and travelling.
+              </p>
+              <p class="hero__text final">
+                As a recent Northcoders Graduate, I am looking for a role as a
+                Junior Developer. I would love to hear about any opportunities,
+                feel free to reach out!
+              </p>
+              <a class="cta">CONTACT ME</a>
+            </div>
+            <img class="hero__img" src="/images/1556361965868 (1).jpeg" />
+          </div>
+        </section>
         <section class="section__skills">
           <h2 class="section-title">Skills</h2>
           <ul class="skills__list">
@@ -95,77 +83,79 @@
             <li class="skill">Jest</li>
             <li class="skill">Agile</li>
             <li class="skill">Pair programming</li>
-       
           </ul>
         </section>
-      
-      <section class="section__projects">
-        <h2 class="section-title">Projects</h2>
+        <section class="section__projects">
+          <h2 class="section-title">Projects</h2>
 
-        <div class="project">
-          <video class="project__video" controls>
-            <source src="./videos/Perkify-Presentation.mp4" type="video/mp4" />
-          </video>
-          <div class="project__info">
-            <h3 class="project__name">Perkify Android App</h3>
-            <p class="project__description">
-              Perkify is a paperless digital local loyalty card alternative for
-              small businesses. It allows users to collect stamps and redeem
-              rewards from their favorite local Vendors. The App was a group project between myself and 4 other developers and built using
-              React Native and Typescript on the Frontend with Expo being our
-              framework of choice. The Backend is built using Node.js and
-              Express with a PostgreSQL database.
-            </p>
-            <a
-              class="project__link"
-              href="https://github.com/orgs/perkify-app/repositories"
-              >View Github</a
-            >
-          </div>
-        </div>
-
-        <div class="project">
-          <img
-            class="project__img"
-            src="/images/Screenshot 2024-01-15 at 13.46.18.png"
-            alt="Project 2"
-          />
-          <div class="project__info">
-            <h3 class="project__name">The Big News App</h3>
-            <p class="project__description">
-              A full-stack application which works similar to the popular news
-              platform Reddit. Users are able to read, post, up/downvote
-              articles and comments. The App is built using React on the
-              Frontend and Node.js, Express and PostgreSQL on the Backend.
-            </p>
-            <div class="project__link__container">
-              <a class="project__link" href="#">View Github</a>
-              <a class="project__link" href="#">View Live</a>
+          <div class="project">
+            <video class="project__video" controls>
+              <source
+                src="./videos/Perkify-Presentation.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <div class="project__info">
+              <h3 class="project__name">Perkify Android App</h3>
+              <p class="project__description">
+                Perkify is a paperless digital local loyalty card alternative
+                for small businesses. It allows users to collect stamps and
+                redeem rewards from their favorite local Vendors. The App was a
+                group project between myself and 4 other developers and built
+                using React Native and Typescript on the Frontend with Expo
+                being our framework of choice. The Backend is built using
+                Node.js and Express with a PostgreSQL database.
+              </p>
+              <a
+                class="project__link"
+                href="https://github.com/orgs/perkify-app/repositories"
+                >View Github</a
+              >
             </div>
           </div>
-        </div>
 
-        <div class="project">
-          <img
-            class="project__img"
-            src="/images/Screenshot 2024-01-15 at 14.02.05.png"
-            alt="Project 2"
-          />
-          <div class="project__info">
-            <h3 class="project__name">Alpine Discovery</h3>
-            <p class="project__description">
-              Alpine Discovery is a fictional moutain travel provider and was
-              built using HTML, CSS and Bootstrap. The main focus was to create
-              a responsive website with a mobile-first approach.
-            </p>
-
-            <div class="project__link__container">
-              <a class="project__link" href="#">View Github</a>
-              <a class="project__link" href="#">View Live</a>
+          <div class="project">
+            <img
+              class="project__img"
+              src="/images/Screenshot 2024-01-15 at 13.46.18.png"
+              alt="Project 2"
+            />
+            <div class="project__info">
+              <h3 class="project__name">The Big News App</h3>
+              <p class="project__description">
+                A full-stack application which works similar to the popular news
+                platform Reddit. Users are able to read, post, up/downvote
+                articles and comments. The App is built using React on the
+                Frontend and Node.js, Express and PostgreSQL on the Backend.
+              </p>
+              <div class="project__link__container">
+                <a class="project__link" href="#">View Github</a>
+                <a class="project__link" href="#">View Live</a>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+
+          <div class="project">
+            <img
+              class="project__img"
+              src="/images/Screenshot 2024-01-15 at 14.02.05.png"
+              alt="Project 2"
+            />
+            <div class="project__info">
+              <h3 class="project__name">Alpine Discovery</h3>
+              <p class="project__description">
+                Alpine Discovery is a fictional mountain travel provider and was
+                built using HTML, CSS and Bootstrap. The main focus was to
+                create a responsive website with a mobile-first approach.
+              </p>
+              <div class="project__link__container">
+                <a class="project__link" href="#">View Github</a>
+                <a class="project__link" href="#">View Live</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
   </body>
 </html>

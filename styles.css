@@ -2,9 +2,6 @@
 
 /* font-family: 'Space Grotesk', sans-serif; */
 
-/* colors */
-/* #151515 #4ee1a0 #242424 #d9d9d9 #ffffff */
-
 * {
   padding: 0;
   margin: 0;
@@ -31,6 +28,8 @@ body {
 /* HEADER */
 
 .nav {
+  color: #151515;
+  background-color: #f8f8f8;
   padding: 1rem;
   width: 100%;
   display: flex;
@@ -39,17 +38,26 @@ body {
   margin-bottom: 6rem;
 }
 
+.nav_name {
+  font-size: 1.6rem;
+}
+
 .sections {
   display: flex;
   gap: 2rem;
 }
 
 .nav__link {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   color: #151515;
   text-decoration: none;
   cursor: pointer;
-  transition: 0.5s;
+  transition: color 0.5s; /* Smooth color transition on hover */
+}
+
+.nav__link:hover,
+.nav__link:active {
+  color: #3498db;
 }
 
 .name {
@@ -76,29 +84,39 @@ body {
   transition: 0.5s;
 }
 
+.socials__link:hover,
+.socials__link:active {
+  color: #3498db;
+}
+
 /* HERO */
 
 .hero-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24rem;
+  gap: 15rem;
   border-bottom: grey solid 0.5px;
 }
 
 .hero__title {
-  font-size: 5.6rem;
-  margin-bottom: 5rem;
+  font-size: 3.4rem;
+  margin-bottom: 3rem;
 }
 
 .hero__text {
-  font-size: 1.8rem;
-  margin-bottom: 7rem;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
   color: #151515;
+}
+
+.final {
+  margin-bottom: 4rem;
 }
 
 .hero__left {
   max-width: 30%;
+  margin-bottom: 8rem;
 }
 
 .hero__img {
@@ -107,21 +125,23 @@ body {
 }
 
 .cta {
-  border: 2px solid blue;
+  border: 2px solid #3498db;
+  color: #3498db;
   padding: 1rem 2rem 1rem 2rem;
+  font-size: 1.4rem;
 }
 
 .cta:hover,
 .cta:active {
   border: none;
-  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
 }
 
 /* Skills */
 
 h2 {
-  font-size: 4.8rem;
-  margin-bottom: 2rem;
+  font-size: 2rem;
   padding-right: 2rem;
 }
 .section__skills {
@@ -137,10 +157,10 @@ h2 {
 }
 
 .skill {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
   color: #242424;
-  border: 2px solid blue;
+  border: 2px solid #242424;
   display: inline-block;
   padding: 0.5rem 1rem;
   margin-right: 1rem;
@@ -192,12 +212,19 @@ h2 {
 }
 
 .project__link {
-  color: blue;
+  color: #3498db;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.8rem;
   cursor: pointer;
 }
+
+.project__link:hover,
+.project__link:active {
+  text-decoration: underline;
+  color: #3498db;
+}
+
 .project__link__container {
   display: flex;
   gap: 1rem;
@@ -211,8 +238,8 @@ h2 {
 /* util */
 .section-title {
   text-align: center;
-  margin-top: 2rem;
-  font-size: 4.8rem;
+  margin-top: 5rem;
+  font-size: 3rem;
   margin-bottom: 4rem;
 }
 

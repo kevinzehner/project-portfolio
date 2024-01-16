@@ -23,7 +23,10 @@ body {
   max-width: 90%;
   margin: 0 auto;
 }
-
+h2 {
+  font-size: 2rem;
+  padding-right: 2rem;
+}
 /* HEADER */
 
 .nav {
@@ -141,10 +144,6 @@ body {
 
 /* Skills */
 
-h2 {
-  font-size: 2rem;
-  padding-right: 2rem;
-}
 .section__skills {
   text-align: center;
   margin-bottom: 4rem;
@@ -252,7 +251,7 @@ h2 {
 }
 
 /* Contact */
-/* Add this section to your existing styles.css file */
+
 .section__contact {
   text-align: center;
   margin-bottom: 4rem;
@@ -290,4 +289,63 @@ h2 {
 
 .contact-form button:hover {
   background-color: #2980b9;
+}
+
+/* Queries */
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    gap: 2rem;
+  }
+
+  .socials {
+    padding-left: 0;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+  }
+
+  .sections {
+    flex-direction: column;
+    gap: 1rem;
+    order: -1;
+  }
+
+  .nav__link {
+    display: none;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .hero__left,
+  .hero__img {
+    max-width: 100%;
+  }
+
+  .cta {
+    max-width: 100%;
+  }
+
+  .section__skills,
+  .section__projects,
+  .section__contact {
+    max-width: 100%;
+  }
+
+  .project {
+    flex-direction: column;
+  }
+
+  .project__img,
+  .project__video {
+    max-width: 100%;
+  }
 }

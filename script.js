@@ -1,5 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
   const links = document.querySelectorAll('a[href^="#"]');
+  document
+    .querySelector(".hamburger-menu")
+    .addEventListener("click", function () {
+      document.querySelectorAll(".nav__link").forEach((link) => {
+        link.style.display = link.style.display === "none" ? "block" : "none";
+      });
+    });
 
   links.forEach((link) => {
     link.addEventListener("click", function (e) {

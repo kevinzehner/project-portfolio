@@ -46,3 +46,4 @@ slideElements.forEach((element) => {
 window.addEventListener("scroll", handleScroll);
 
 handleScroll();
+

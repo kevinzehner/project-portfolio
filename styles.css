@@ -6,13 +6,16 @@
 
 html {
   font-family: "Roboto", sans-serif;
-
   font-size: 62.5%;
 }
 
 body {
-  background-color: #ffffff;
-  color: #151515;
+  background: linear-gradient(
+    109.5deg,
+    rgb(24, 175, 231) 11.2%,
+    rgb(67, 82, 186) 74.6%
+  );
+  color: #fff;
 }
 
 .container {
@@ -30,8 +33,12 @@ h2 {
 /* HEADER */
 
 .nav {
-  color: #151515;
-  background-color: #ffffff;
+  color: #fff;
+  background: linear-gradient(
+    109.5deg,
+    rgb(24, 175, 231) 11.2%,
+    rgb(67, 82, 186) 74.6%
+  );
   padding: 1rem;
   width: 100%;
   display: flex;
@@ -55,15 +62,16 @@ h2 {
 
 .nav__link {
   font-size: 1.8rem;
-  color: #151515;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
   transition: color 0.5s;
+  color: #fff;
 }
 
 .nav__link:hover,
 .nav__link:active {
-  color: #3498db;
+  color: #fff;
 }
 
 .name {
@@ -143,8 +151,8 @@ h2 {
 }
 
 .cta {
-  border: 2px solid #3498db;
-  color: #3498db;
+  border: 2px solid #fff;
+  color: #fff
   padding: 1rem 2rem 1rem 2rem;
   font-size: 1.4rem;
   cursor: pointer;
@@ -176,7 +184,7 @@ h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
   color: #242424;
-  border: 2px solid #3498db;
+  border: 2px solid #fff;
   display: inline-block;
   padding: 0.5rem 1rem;
   margin-right: 1rem;

@@ -10,10 +10,10 @@ html {
 }
 
 body {
-  background: linear-gradient(
-    109.5deg,
-    rgb(24, 175, 231) 11.2%,
-    rgb(67, 82, 186) 74.6%
+  background: radial-gradient(
+    circle at 74.2% 50.9%,
+    rgb(14, 72, 222) 5.2%,
+    rgb(3, 22, 65) 75.3%
   );
   color: #fff;
 }
@@ -34,11 +34,6 @@ h2 {
 
 .nav {
   color: #fff;
-  background: linear-gradient(
-    109.5deg,
-    rgb(24, 175, 231) 11.2%,
-    rgb(67, 82, 186) 74.6%
-  );
   padding: 1rem;
   width: 100%;
   display: flex;
@@ -116,7 +111,6 @@ h2 {
 .hero__text {
   font-size: 1.6rem;
   margin-bottom: 2rem;
-  color: #151515;
 }
 
 .final {
@@ -152,7 +146,7 @@ h2 {
 
 .cta {
   border: 2px solid #fff;
-  color: #fff
+  color: #fff;
   padding: 1rem 2rem 1rem 2rem;
   font-size: 1.4rem;
   cursor: pointer;
@@ -183,7 +177,6 @@ h2 {
 .skill {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: #242424;
   border: 2px solid #fff;
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -233,7 +226,6 @@ h2 {
 
 .project__description {
   font-size: 1.6rem;
-  color: #151515;
   margin-bottom: 1.5rem;
 }
 

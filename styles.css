@@ -10,12 +10,12 @@ html {
 }
 
 body {
-  background: radial-gradient(
-    circle at 74.2% 50.9%,
-    rgb(14, 72, 222) 5.2%,
-    rgb(3, 22, 65) 75.3%
-  );
   color: #fff;
+  background: linear-gradient(
+    181deg,
+    rgb(2, 0, 97) 15%,
+    rgb(97, 149, 219) 158.5%
+  );
 }
 
 .container {
@@ -44,10 +44,17 @@ h2 {
   position: sticky;
   top: 0;
   z-index: 1000;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(59, 149, 237) 0%,
+    rgb(7, 91, 173) 90%
+  );
 }
 
 .nav_name {
-  font-size: 1.6rem;
+  font-size: 2rem;
+  font-weight: bolder;
+  padding: 1rem;
 }
 
 .sections {
@@ -56,7 +63,8 @@ h2 {
 }
 
 .nav__link {
-  font-size: 1.8rem;
+  font-weight: bold;
+  font-size: 2rem;
   color: #fff;
   text-decoration: none;
   cursor: pointer;
@@ -66,7 +74,7 @@ h2 {
 
 .nav__link:hover,
 .nav__link:active {
-  color: #fff;
+  color: #3498db;
 }
 
 .name {
@@ -100,12 +108,19 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: 15rem;
-  border-bottom: grey solid 0.5px;
 }
 
 .hero__title {
   font-size: 3.4rem;
   margin-bottom: 3rem;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(59, 149, 237) 0%,
+    rgb(7, 91, 173) 90%
+  );
+  color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
 }
 
 .hero__text {
@@ -132,6 +147,7 @@ h2 {
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 25px;
 }
 
 .hero__img-container::before {
@@ -150,12 +166,12 @@ h2 {
   padding: 1rem 2rem 1rem 2rem;
   font-size: 1.4rem;
   cursor: pointer;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
 .cta:hover,
 .cta:active {
-  border: 2px solid #3498db;
-  background-color: #3498db;
   padding: 1rem 2rem 1rem 2rem;
   color: #fff;
 }
@@ -163,9 +179,17 @@ h2 {
 /* Skills */
 
 .section__skills {
-  text-align: center;
   margin-bottom: 4rem;
-  border-bottom: grey solid 0.5px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(59, 149, 237) 0%,
+    rgb(7, 91, 173) 90%
+  );
+  color: #fff;
 }
 
 .skills__list {
@@ -182,12 +206,12 @@ h2 {
   padding: 0.5rem 1rem;
   margin-right: 1rem;
   margin-top: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
   transition: background-color 0.5s, color 0.5s;
 }
 
 .skill:hover {
-  border: none;
-  background-color: #3498db;
   color: #fff;
 }
 
@@ -195,7 +219,16 @@ h2 {
 
 .section__projects {
   padding: 2rem;
-  border-bottom: grey solid 0.5px;
+}
+
+.section-projects-title {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+
+  color: #fff;
+  padding: 2rem;
 }
 
 .project__title {
@@ -207,10 +240,18 @@ h2 {
   margin-bottom: 6rem;
   align-items: center;
   gap: 2rem;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(59, 149, 237) 0%,
+    rgb(7, 91, 173) 90%
+  );
+  color: #fff;
+  border-radius: 10px;
 }
 
 .project__img {
   max-width: 35%;
+  border-radius: 10px;
 }
 
 .project__info {

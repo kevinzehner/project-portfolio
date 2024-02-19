@@ -106,7 +106,6 @@ h2 {
 .hero__title {
   font-size: 3.4rem;
   margin-bottom: 3rem;
-
   border: 2px solid #fff;
   color: #fff;
   padding: 2rem;
@@ -151,7 +150,7 @@ h2 {
 }
 
 .cta {
-  border: 2px solid #fff;
+  background: rgba(243, 156, 18, 0.8);
   color: #fff;
   padding: 1rem 2rem 1rem 2rem;
   font-size: 1.4rem;
@@ -164,6 +163,9 @@ h2 {
 .cta:active {
   padding: 1rem 2rem 1rem 2rem;
   color: #fff;
+  border: none;
+  background: rgba(243, 156, 18, 0.8);
+  transition: 0.2s;
 }
 
 /* Skills */
@@ -292,7 +294,7 @@ h2 {
 .contact-form {
   display: flex;
   flex-direction: column;
-  max-width: 60%;
+  max-width: 40%;
   margin: 0 auto;
 }
 
@@ -305,21 +307,18 @@ h2 {
 .contact-form textarea {
   padding: 8px;
   margin-bottom: 16px;
+  background-color: transparent;
+  border: 1px solid #fff;
 }
 
 .contact-form button {
   align-self: center;
   padding: 10px;
-  background-color: #3498db;
+  background: rgba(243, 156, 18, 0.8);
   color: #fff;
   border: none;
-  cursor: pointer;
-  max-width: 50%;
+  max-width: 30%;
   margin-bottom: 4rem;
-}
-
-.contact-form button:hover {
-  background-color: #2980b9;
 }
 
 /* Animations */
